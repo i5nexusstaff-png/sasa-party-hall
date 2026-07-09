@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Base ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Prevent transient horizontal scroll from fade-left/right entrance animations */
+    overflow-x: hidden;
+  }
+  body {
+    @apply font-body bg-cream text-dark antialiased;
+    overflow-x: hidden;
+  }
+  .dark body {
+    @apply bg-dark text-cream;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+/* ===== Reusable component classes ===== */
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 font-medium
+           transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gold/50
+           relative overflow-hidden;
+  }
+  .btn-primary {
+    @apply btn bg-gold-gradient text-dark shadow-gold hover:-translate-y-0.5 hover:shadow-lg;
+  }
+  .btn-outline {
+    @apply btn border border-gold text-gold hover:bg-gold hover:text-dark;
+  }
+  .btn-dark {
+    @apply btn bg-dark text-cream hover:bg-dark-soft;
+  }
+
+  /* Glassmorphism card */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-glass;
+  }
+  .glass-light {
+    @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-soft;
+  }
+
+  /* Gold text gradient */
+  .text-gradient {
+    @apply bg-gold-gradient bg-clip-text text-transparent;
+  }
+
+  /* Section padding */
+  .section {
+    @apply py-16 sm:py-20 lg:py-28;
+  }
+}
+
+/* ===== Custom scrollbar ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#c8a95b, #a98c3f);
+  border-radius: 10px;
+}
+
+/* ===== Swiper overrides ===== */
+.swiper-pagination-bullet {
+  background: #c8a95b !important;
+  opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  width: 22px !important;
+  border-radius: 6px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #c8a95b !important;
+}
+
+/* Selection */
+::selection {
+  background: #c8a95b;
+  color: #1b1b1b;
+}
