@@ -26,7 +26,7 @@ export default function About() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}
-            src="/about.png"
+            src="/about.jpg"
             alt="SASA Party Hall banquet hall"
             loading="lazy"
             className="w-full rounded-3xl object-cover shadow-soft"

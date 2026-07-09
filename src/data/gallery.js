@@ -13,7 +13,7 @@ export const galleryImages = [
   { id: 5, category: 'Interior', src: '/gallery/interior5.jpg', alt: 'SASA Party Hall interior' },
   { id: 6, category: 'Exterior', src: '/gallery/exterior1.jpg', alt: 'SASA Party Hall exterior' },
   { id: 7, category: 'Exterior', src: '/gallery/exterior2.jpg', alt: 'SASA Party Hall exterior' },
-  { id: 17, category: 'Exterior', src: '/gallery/exterior3.png', alt: 'SASA Party Hall exterior' },
+  { id: 17, category: 'Exterior', src: '/gallery/exterior3.jpg', alt: 'SASA Party Hall exterior' },
   { id: 20, category: 'Dining', src: '/gallery/dining.jpeg', alt: 'SASA Party Hall dining hall' },
   { id: 21, category: 'Dining', src: '/gallery/dining1.jpeg', alt: 'SASA Party Hall dining hall' },
   { id: 22, category: 'Dining', src: '/gallery/dining2.jpeg', alt: 'SASA Party Hall dining hall' },
