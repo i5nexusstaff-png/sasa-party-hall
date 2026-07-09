@@ -59,12 +59,8 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        animate={{ y: [0, 12, 0] }}
-        transition={{ repeat: Infinity, duration: 1.8 }}
-        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2"
-      >
+      {/* Scroll indicator (CSS animation — cheaper than a JS loop) */}
+      <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 animate-float">
         <button
           type="button"
           onClick={scrollDown}
@@ -75,7 +71,7 @@ export default function Hero() {
         >
           <FaUtensils size={20} className="transition-transform duration-300 group-hover:scale-110" />
         </button>
-      </motion.div>
+      </div>
     </section>
   );
 }

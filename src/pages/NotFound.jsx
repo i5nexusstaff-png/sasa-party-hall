@@ -17,13 +17,9 @@ export default function NotFound() {
           transition={{ duration: 0.6 }}
           className="relative z-10"
         >
-          <motion.h1
-            animate={{ scale: [1, 1.03, 1] }}
-            transition={{ repeat: Infinity, duration: 3 }}
-            className="font-heading text-[7rem] sm:text-[11rem] font-bold leading-none text-gradient"
-          >
+          <h1 className="font-heading text-[7rem] sm:text-[11rem] font-bold leading-none text-gradient">
             404
-          </motion.h1>
+          </h1>
           <h2 className="mt-2 font-heading text-2xl sm:text-3xl font-bold text-cream">
             Oops! This Page Took a Day Off
           </h2>
